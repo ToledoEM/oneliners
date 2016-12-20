@@ -581,3 +581,6 @@ Find files containing text (`-l` outputs only the file names, `-i` ignores the c
 
     grep -lir "some text" *
 
+## Get files WGET in parallel
+
+    cat 'URL_txt_file' | parallel --gnu "wget {}"
